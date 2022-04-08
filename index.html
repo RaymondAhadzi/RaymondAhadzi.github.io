@@ -344,17 +344,53 @@
                             <div class="col-sm-8 col-sm-offset-1">
                                 <div class="row">
                                     <div class="col-md-3 col-xs-6 md-margin-b-30">
-                                    <form action="/action_page.php" target="mailto:raymond@kuenyehia.com">
-                                        <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
-                                        <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-                                        <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
-                                        <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
-                                        <p>
-                                            <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-                                                <i class="fa fa-paper-plane"></i> SEND MESSAGE
-                                            </button>
-                                        </p>
-                                    </form>
+                                    	<style>
+						.button {
+  						border-radius: 4px;
+  						background-color: #faf9f6;
+  						border: none;
+  						color: #FFFFFF;
+  						text-align: center;
+  						font-size: 28px;
+  						padding: 20px;
+  						width: 200px;
+  						transition: all 0.5s;
+  						cursor: pointer;
+  						margin: 5px;
+						}
+
+						.button span {
+  						cursor: pointer;
+						font-size: 22px;
+						font-family: Hind, sans-serif;
+  						display: inline-block;
+  						position: relative;
+  						transition: 0.5s;
+						font-weight: 700;
+  						color: #0a0a0a;
+  						line-height: 1.4;
+  						margin: 0 0 15px;
+						}
+
+						.button span:after {
+  						content: '\00bb';
+ 						position: absolute;
+  						opacity: 0;
+  						top: 0;
+  						right: -20px;
+  						transition: 0.5s;
+						}
+
+						.button:hover span {
+  						padding-right: 25px;
+						}
+
+						.button:hover span:after {
+  						opacity: 1;
+  						right: 0;
+						}
+					</style>
+					<a href="mailto:raymond@kuenyehia.com?subject=Message from website&cc=elikem@kuenyehia.com><button class="button"><span><h3>Send Message</h3></span></button>
                                     </div>
                                 </div>
                             </div> 
