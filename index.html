@@ -133,10 +133,43 @@
                         <div class="masonry-grid row row-space-2">
                             <div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
                             <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8 margin-b-4">
+				<style>
+					* {
+  					box-sizing: border-box;
+					}
+
+					body {
+  					font-family: Arial;
+ 		 			font-size: 17px;
+					}
+
+					.container {
+  					position: relative;
+  					max-width: 800px;
+  					margin: 0 auto;
+					}
+
+					.container img {vertical-align: middle;}
+
+					.container .content {
+  					position: absolute;
+  					bottom: 0;
+  					background: rgb(0, 0, 0); /* Fallback color */
+  					background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  					color: #f1f1f1;
+  					width: 100%;
+  					padding: 20px;
+					}
+				</style>
                                 <!-- Work -->
                                 <div class="work work-popup-trigger">
                                     <div class="work-overlay">
+					<div class="container">
                                         <img class="full-width img-responsive" src="img/800x400/Entrepreneurship.jpg" alt="Portfolio Image">
+						<div class="content">
+    						<h1>ENTREPRENEURSHIP</h1>
+  						</div>
+					</div>
                                     </div>
                                     <div class="work-popup-overlay">
                                         <div class="work-popup-content">
